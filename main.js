@@ -93,7 +93,7 @@ app.use(express.json());
 
 app.get("/usuarios", controller.getUsuarios.bind(controller));
 app.get("/usuarios/:id", controller.getUsuarioById.bind(controller));
-app.get("/usuarios/prom", controller.promedioEdad.bind(controller));
+app.get("/promedio", controller.promedioEdad.bind(controller));
 app.post("/usuarios", controller.addUsuario.bind(controller));
 app.put("/usuarios/:id", controller.updateUsuario.bind(controller));
 app.delete("/usuarios/:id", controller.deleteUsuario.bind(controller));
